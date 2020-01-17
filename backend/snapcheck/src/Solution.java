@@ -12,7 +12,7 @@ public class Solution {
         StringBuilder tempBuilder;
         double sqrt = Math.sqrt((double) len);
         int row = (int) Math.round(sqrt), col;
-        if (row == sqrt) {
+        if (row >= sqrt) {
             col = row;
         } else {
             col = row == MAXIMUM_LENGTH ? MAXIMUM_LENGTH : row + 1;
@@ -36,7 +36,8 @@ public class Solution {
 
         // make your onw test cases here
 
-        String s = "dasdasdasdasjdhasudhiuasdiuasdghuasbduasaisdghasjkdbasdubadnsdubjasdbnasbdjkasbda";
+        String s = "chillout";
+//        dasdasdasdasjdhasudhiuasdiuasdghuasbduasaisdghasjkdbasdubadnsdubjasdbnasbdjkasbda
 
         String res = encrypt(s);
         System.out.println(res);
